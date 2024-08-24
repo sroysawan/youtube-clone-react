@@ -1,0 +1,63 @@
+.-the-cards-search{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 24px;
+    margin: auto;
+    margin-top: 48px;
+    max-width: 1144px;
+}
+
+.-the-cards-search .-card{
+    display: grid;
+    grid-template-columns: 360px auto;
+    gap: 16px;
+}
+
+.-the-cards-search .-card .-about{
+    display: block;
+    position: relative;
+}
+
+.-the-cards-search .-card .-title{
+    -webkit-line-clamp: 1;
+    width: calc(100%+ - 40px);
+}
+
+.-the-cards-search .-card .-caption,
+.-the-cards-search .-card .-view,
+.-the-cards-search .-card .-channel-name{
+    font-weight: 400;
+    font-size: 12px;
+    color: #606060;
+    list-style: 18px;
+}
+
+.-the-cards-search .-card .-option{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.-the-cards-search .-card .-about:hover .-option{
+    display: block;
+}
+
+.-the-cards-search .-card .-channel{
+    display: grid;
+    grid-template-columns: 24px auto;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+}
+
+.-the-cards-search .-card .-channel-img img{
+    width: 24px;
+    height: 24px;
+    border-radius: 10em;
+}
+
+.-the-cards-search .-card .-thumb{
+    margin: 0;
+}
