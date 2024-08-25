@@ -6,6 +6,7 @@
     margin: auto;
     margin-top: 48px;
     max-width: 1144px;
+    padding-bottom: 20px;
 }
 
 .-the-cards-search .-card{
@@ -59,5 +60,11 @@
 }
 
 .-the-cards-search .-card .-thumb{
+    cursor: pointer;
     margin: 0;
+}
+
+.-the-cards-search .-card .-thumb:hover{
+    border-radius: 0%;
+    transition: 0.3s;
 }

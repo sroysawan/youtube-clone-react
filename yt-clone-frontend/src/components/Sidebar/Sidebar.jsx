@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./sideStyle.css";
-
+import { GoHome } from "react-icons/go";
+import { SiYoutubeshorts } from "react-icons/si";
+import { PiYoutubeLogoFill } from "react-icons/pi";
 function Sidebar() {
 
   const [subscribe, setSubscribe] = useState([])
@@ -19,19 +21,22 @@ function Sidebar() {
       <div className="-side-pmr">
         <a href="#!" className="-item">
           <div className="-icon">
-            <img src="https://via.placeholder.com/24x24" alt="" />
+            {/* <img src="https://via.placeholder.com/24x24" alt="" /> */}
+            <GoHome size={24}/>
           </div>
           <div className="-text">หน้าแรก</div>
         </a>
         <a href="#!" className="-item">
           <div className="-icon">
-            <img src="https://via.placeholder.com/24x24" alt="" />
+            {/* <img src="https://via.placeholder.com/24x24" alt="" /> */}
+            <SiYoutubeshorts size={24}/>
           </div>
           <div className="-text">Shorts</div>
         </a>
         <a href="#!" className="-item">
           <div className="-icon">
-            <img src="https://via.placeholder.com/24x24" alt="" />
+            {/* <img src="https://via.placeholder.com/24x24" alt="" /> */}
+            <PiYoutubeLogoFill size={24}/>
           </div>
           <div className="-text">การติดตาม</div>
         </a>

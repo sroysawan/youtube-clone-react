@@ -6,11 +6,11 @@
     padding-bottom: 20px;
 }
 
-.-card .-thumb{
+.-card .-thumb {
     aspect-ratio: 16/9;
     border-radius: 12px;
     margin-bottom: 12px;
-    overflow: hidden;
+    overflow: hidden; /* ทำให้ขอบของภาพไม่หลุดออกนอก container */
 }
 
 .-card .-channel-image{

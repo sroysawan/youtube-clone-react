@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-
+import { BsSearch } from "react-icons/bs";
+import { MdKeyboardVoice } from "react-icons/md";
 function SearchBox() {
 
     const [query, setQuery] = useState("")
@@ -21,9 +22,9 @@ function SearchBox() {
             onChange={(e)=> setQuery(e.target.value)}
         />
       </div>
-      <button className="-btn" onClick={handleSearch}>Q</button>
+      <button className="-btn" onClick={handleSearch}><BsSearch /></button>
     </div>
-    <div className="-voice"></div>
+    <div className="-voice"><MdKeyboardVoice size={20}/></div>
   </form>
   )
 }
