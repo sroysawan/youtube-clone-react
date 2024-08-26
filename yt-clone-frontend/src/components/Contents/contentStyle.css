@@ -4,6 +4,7 @@
     gap: 16px;
     padding: 0 24px;
     padding-bottom: 20px;
+    cursor: pointer;
 }
 
 .-card .-thumb {
@@ -11,6 +12,11 @@
     border-radius: 12px;
     margin-bottom: 12px;
     overflow: hidden; /* ทำให้ขอบของภาพไม่หลุดออกนอก container */
+}
+
+.-card .-thumb:hover{
+    border-radius: 0%;
+    transition: 0.3s;
 }
 
 .-card .-channel-image{
@@ -60,6 +66,8 @@
     font-size: 2rem;
     line-height: 2.8rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 .-short-wrap{
@@ -87,6 +95,7 @@
     border-radius: 12px;
     overflow: hidden;
     margin-bottom: 12px;
+    cursor: pointer;
 }
 
 .-short .-view{

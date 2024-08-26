@@ -3,6 +3,8 @@ import Tags from "../Tags/Tags";
 import "./contentStyle.css";
 import CardVideo from "../Card/CardVideo";
 import CardShost from "../Card/CardShost";
+import { SiYoutubeshorts } from "react-icons/si";
+
 function Content() {
   const [videos,setVideos] = useState([]);
   const [shorts,setShorts] = useState([]);
@@ -41,7 +43,7 @@ function Content() {
         ))}
       </section>
       <section id="shorts">
-          <div className="-section-title">[] Shorts</div>
+          <div className="-section-title"><SiYoutubeshorts size={24}/> Shorts</div>
           <div className="-short-wrap">
             {shorts.map((short,index) => (
               <CardShost key={index} content={short}></CardShost>

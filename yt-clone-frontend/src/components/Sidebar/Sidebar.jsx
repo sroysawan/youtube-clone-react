@@ -3,6 +3,8 @@ import "./sideStyle.css";
 import { GoHome } from "react-icons/go";
 import { SiYoutubeshorts } from "react-icons/si";
 import { PiYoutubeLogoFill } from "react-icons/pi";
+import { Link } from "react-router-dom";
+
 function Sidebar() {
 
   const [subscribe, setSubscribe] = useState([])
@@ -18,14 +20,16 @@ function Sidebar() {
   }, []);
   return (
     <section id="side">
-      <div className="-side-pmr">
-        <a href="#!" className="-item">
+      <div className="-side-pmr">  
+      <Link to="/" className="-item">
+        {/* <a href="#!" className="-item"> */}
           <div className="-icon">
             {/* <img src="https://via.placeholder.com/24x24" alt="" /> */}
             <GoHome size={24}/>
           </div>
           <div className="-text">หน้าแรก</div>
-        </a>
+        {/* </a> */}
+        </Link>
         <a href="#!" className="-item">
           <div className="-icon">
             {/* <img src="https://via.placeholder.com/24x24" alt="" /> */}
